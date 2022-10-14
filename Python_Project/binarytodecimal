@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+"""
+da binario a decimale
+"""
+bitstring = input("inserisci il numero binario: ")
+decimal = 0
+exponent = len(bitstring)-1
+for digit in bitstring:
+    decimal = decimal + int(digit) * 2 ** exponent
+    exponent = exponent - 1
+print("il valore decimale è: ",decimal)

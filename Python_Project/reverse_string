@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+myString="myprogram.exe"
+string=""
+count=len(myString)-1
+
+while count >=0:
+    string = string + myString[count]
+    count -=1
+    pass
+print(string)
