@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+"""
+conta delle parole in una frase
+"""
+sentence = input("inserisci la frase: ")
+listOfWords = sentence.split()
+print("there are", len(listOfWords), "words")
+sum=0
+for word in listOfWords:
+    sum += len(word)
+print("la lunghezza media delle parole è: ", sum / len(listOfWords))
