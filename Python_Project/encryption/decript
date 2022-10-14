@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+"""
+programma per devifrare
+"""
+
+code=input("inserisci il codice: ")
+distance=int(input("inserisci la chiave di decription: "))
+plaintext=""
+
+for ch in code:
+    ordValue = ord(ch)
+    plainValue = ordValue - distance
+    if plainValue < ord('a'):
+        plainValue = ord('z') - (distance - (ord('a') - ordValue - 1))
+    plaintext += chr(plainValue)
+print(plaintext)
